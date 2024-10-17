@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JanKenPo</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-500">
+    <div class="p-7">
+    <h1 class="text-4xl md:text-5xl font-extrabold border-4 border-black w-fit mx-auto p-5 rounded-md bg-black shadow-lg text-center text-white">
+        LET'S PLAY !
+    </h1>
+    </div>
+
+    <!-- Area Player -->
+    <div class="flex flex-col md:flex-row ml-4 md:ml-20 lg:ml-40 items-center gap-3 p-4">
+        <div class="player-area bg-blue-800 border-8 border-black p-5 md:p-10 mt-5 flex flex-col md:flex-row justify-between items-center rounded-xl max-w-sm md:max-w-lg">
+            <p class="text-lg font-semibold mr-0 md:mr-10 border-4 border-black rounded-xl p-2 score w-full text-center md:w-auto bg-blue-500">Your Score: <span id="player-score">0</span></p>
+            <ul class="flex flex-col gap-4 mt-4 md:mt-0">
+                <li>
+                    <img src="img/paper.png" class="paper border-8 rounded-3xl bg-blue-300 w-20 h-20 md:w-32 md:h-32 object-cover" id="paper">
+                </li>
+                <li>
+                    <img src="img/rock.png" class="rock border-8 rounded-3xl bg-slate-800 w-20 h-20 md:w-32 md:h-32 object-cover" id="rock">
+                </li>
+                <li>
+                    <img src="img/scissors.png" class="scissors border-8 rounded-3xl bg-purple-950 w-20 h-20 md:w-32 md:h-32 object-cover" id="scissors">
+                </li>
+            </ul>
+        </div>
+
+<!-- Info -->
+<div class="info box bg-white border-4 border-black  w-full md:w-1/4 lg:w-1/5 text-center" id="score">
+    <!-- Konten info akan diisi di sini -->
+</div>
+
+
+
+        <!-- Area Komputer -->
+        <div class="enemy-area bg-red-800 border-8 border-black p-5 md:p-10 mt-5 flex flex-col items-center justify-center rounded-xl max-w-sm md:max-w-lg">
+            <img src="img/rock.png" class="computer w-20 h-20 md:w-32 md:h-32 object-cover items-center" id="imgcom">
+            <p class="text-lg font-semibold mt-4 border-4 border-black rounded-xl p-2 text-center bg-red-500">Computer's Score: <span id="computer-score">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
